@@ -1,0 +1,181 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA562D29-0727-4AD8-8CC1-C846CA490B0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Karna.Windows.UI</RootNamespace>
+    <AssemblyName>Karna.Windows.UI</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>KarnaKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\KarnaPurposeAttribute.cs" />
+    <Compile Include="Attributes\KarnaWindowAttribute.cs" />
+    <Compile Include="BitmapPainter.cs" />
+    <Compile Include="CustomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomPanel.Designer.cs">
+      <DependentUpon>CustomPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultWindow.cs" />
+    <Compile Include="Dock\CarouselDockPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dock\CarouselDockPanel.Designer.cs">
+      <DependentUpon>CarouselDockPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dock\CustomDockManager.cs" />
+    <Compile Include="Dock\CustomDockPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dock\CustomDockPanel.Designer.cs">
+      <DependentUpon>CustomDockPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dock\DockManager.cs" />
+    <Compile Include="Dock\DockPainter.cs" />
+    <Compile Include="Dock\DockRotator.cs" />
+    <Compile Include="Dock\DockSettings.cs" />
+    <Compile Include="Dock\DockUI.cs" />
+    <Compile Include="BufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BufferedPanel.Designer.cs">
+      <DependentUpon>BufferedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dock\FishEyePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dock\FishEyePanel.Designer.cs">
+      <DependentUpon>FishEyePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlassWindow.cs" />
+    <Compile Include="KarnaCollection.cs" />
+    <Compile Include="KarnaColors.cs" />
+    <Compile Include="KarnaMath.cs" />
+    <Compile Include="LightWindow.cs" />
+    <Compile Include="MagicDots.cs" />
+    <Compile Include="MagicNight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Notebook.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Notebook.Designer.cs">
+      <DependentUpon>Notebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotebookCollection.cs" />
+    <Compile Include="NotebookTopic.cs" />
+    <Compile Include="PhotoFrameWindow.cs" />
+    <Compile Include="PredefinedWindow.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SunkenWindow.cs" />
+    <Compile Include="TextPainter.cs" />
+    <Compile Include="ToolboxImages.cs" />
+    <Compile Include="Design\WaterImageDesigner.cs" />
+    <Compile Include="GradientFill.cs" />
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradientPanel.Designer.cs">
+      <DependentUpon>GradientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayeredBackground.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LayeredWindow.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="NativeTypes.cs" />
+    <Compile Include="PatternBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TraceDebug.cs" />
+    <Compile Include="VistaWindow.cs" />
+    <Compile Include="WaterImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WaterImage.Designer.cs">
+      <DependentUpon>WaterImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaterRender.cs" />
+    <Compile Include="WindowProperties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KarnaKey.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\WaterImage.bmp" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\frame00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\frame01.png" />
+    <EmbeddedResource Include="Images\frame02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\frame03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dock\FishEyePanel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FishEyePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\frame04.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karna.Windows.UI", "Karna.Windows.UI\Karna.Windows.UI.csproj", "{AA562D29-0727-4AD8-8CC1-C846CA490B0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Karna.Windows.FXShow", "Karna.Windows.FXShow\Karna.Windows.FXShow.csproj", "{9B7ED83A-8848-4D36-8497-F80DE5308FE2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA562D29-0727-4AD8-8CC1-C846CA490B0A} = {AA562D29-0727-4AD8-8CC1-C846CA490B0A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA562D29-0727-4AD8-8CC1-C846CA490B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA562D29-0727-4AD8-8CC1-C846CA490B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA562D29-0727-4AD8-8CC1-C846CA490B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA562D29-0727-4AD8-8CC1-C846CA490B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7ED83A-8848-4D36-8497-F80DE5308FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7ED83A-8848-4D36-8497-F80DE5308FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7ED83A-8848-4D36-8497-F80DE5308FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7ED83A-8848-4D36-8497-F80DE5308FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		CodeStyleEnforcer_Active = 0
+		CodeStyleEnforcer_RulesLocation = 
+	EndGlobalSection
+EndGlobal
