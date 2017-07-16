@@ -5,3 +5,5 @@ Karna .NET is freeware C# library for fast developing widgets, docks, screenlets
 # Screenshots
 
 ![Karna](https://raw.githubusercontent.com/perevoznyk/karna/master/karna_dock.gif)
+
+![Karna](https://raw.githubusercontent.com/perevoznyk/karna/master/karna_magic.gif)
